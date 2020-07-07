@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  padding: 0pc;
+  margin: 0px;
+}
+
+.pc_layout {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100vh;
+
+  justify-content: flex-end;
+  align-items: center;
+
+  overflow: hidden;
+  /* background-color: #0e6655; */
+  background-color: #26a69a;
+
+  background-image: url("../images/back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#lottie_anim {
+  width: 50vw;
+  height: 50vh;
+
+  display: flex;
+}
+
+/*Mobile display*/
+@media (max-width: 54em) {
+  #lottie_anim {
+    width: 50vw;
+    /* height: 50vh; */
+
+    display: flex;
+  }
+
+  #text {
+    text-align: center;
+    font-size: 1em;
+    color: wheat;
+    font-family: "Space Mono", monospace;
+  }
+}
+
+/*PC display*/
+@media (min-width: 54em) {
+  #lottie_anim {
+    width: 50vw;
+    /* height: 50vh; */
+
+    display: flex;
+  }
+
+  #text {
+    text-align: center;
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-family: "Space Mono", monospace;
+  }
+}

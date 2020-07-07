@@ -1,0 +1,219 @@
+/* this is the tile */
+.tiles_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+}
+
+.tile_date_month {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.tile_date_day {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.tile_body_category {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: tomato;
+}
+
+.tile_body_title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.tile_body_time {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.tile_image {
+  position: relative;
+}
+.tile-image-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tile-image-item img {
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.tile {
+  transition: all 0.2s ease-in;
+  box-shadow: 0 0 15px rgba(126, 125, 125, 0.15),
+    0 0 4px rgba(105, 105, 105, 0.24);
+}
+
+.tile:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.26), 0 0 15px rgba(0, 0, 0, 0.26);
+}
+.tile_body :hover {
+  cursor: pointer;
+  text-decoration: underline solid #e20338;
+}
+
+/* desktop display */
+@media (min-width: 500px) {
+  .tile {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height: 600px;
+    background-color: white;
+  }
+
+  .tile_body {
+    background-color: white;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+  }
+  .tile_date {
+    background-color: #2f2424;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: 20px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  .tile_image {
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .tile:hover .tile_image .tile-image-item img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .tile_date_month {
+    font-size: 1em;
+  }
+
+  .tile_date_day {
+    font-size: 1.5em;
+  }
+  .tile_body_time,
+  .tile_body_category,
+  .tile_body_title {
+    width: 90%;
+    /* background-color: yellow; */
+    margin-top: 15px;
+  }
+
+  .tile_body_category {
+    margin-top: 30px;
+    font-size: 1em;
+    color: tomato;
+  }
+
+  .tile_body_title {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.15em;
+  }
+
+  .tile_body_time {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  .min_tile {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height: 60vh;
+    background-color: white;
+  }
+  .min_image {
+    height: 60%;
+  }
+}
+
+/* Mobile display */
+@media (max-width: 500px) {
+  .tile {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.5em;
+    background-color: pink;
+  }
+
+  .tile_body {
+    background-color: white;
+
+    display: flex;
+
+    flex-direction: column;
+  }
+  .tile_date {
+    background-color: #2f2424c7;
+    width: 10vh;
+    color: white;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 1.7em;
+  }
+
+  .tile_date_month {
+    font-size: 1em;
+  }
+
+  .tile_date_day {
+    font-size: 1.5em;
+  }
+
+  .tile_body_time,
+  .tile_body_category,
+  .tile_body_title {
+    width: 80%;
+    /* background-color: yellow; */
+    margin-left: 10px;
+    margin-right: 10px;
+
+    font-size: 2em;
+  }
+
+  .tile_body_category {
+    margin-top: 15px;
+  }
+
+  .tile_body_time {
+    margin-bottom: 10px;
+  }
+
+  .tile_body_title {
+    margin-bottom: 12px;
+  }
+}

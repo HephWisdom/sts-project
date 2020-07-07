@@ -1,0 +1,145 @@
+.reader-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10vh;
+}
+.reader-nav-image {
+  width: 100%;
+  height: 58%;
+  background-color: springgreen;
+}
+
+.reader-nav-content-item {
+  display: flex;
+}
+
+.reader-nav-content {
+  margin-top: 5%;
+  /* background-color: rebeccapurple; */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.reader-nav-content-date {
+  margin-left: 5%;
+  color: #404040a9;
+}
+.reader-nav-content-date {
+  display: block;
+}
+.reader-nav {
+  box-shadow: 0 0 15px rgba(126, 125, 125, 0.35),
+    0 0 4px rgba(105, 105, 105, 0.24);
+
+  background-color: white;
+}
+.reader-nav-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.reader-nav-content-socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reader-nav-content-socials a {
+  margin: 0px 10px;
+}
+/* PC Card */
+@media (min-width: 800px) {
+  .reader-header {
+    width: 100%;
+    height: 40vh;
+    background-color: #2f2424;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    color: white;
+    font-size: 2.2rem;
+    margin-top: 10vh;
+  }
+
+  .reader-header-title {
+    margin-left: 33.5%;
+
+    margin-bottom: 2.5%;
+  }
+
+  .reader-header-title div:first-child,
+  .reader-header-title div:last-child {
+    font-size: 1.024rem;
+  }
+  .reader-nav {
+    /* background-color: rgb(192, 72, 72); */
+    width: 25%;
+    height: 700px;
+    margin-top: -30vh;
+    margin-right: 2.5%;
+  }
+  .reader-content {
+    margin-top: 1%;
+    /* background-color: black; */
+    width: 60%;
+    /* height: 100vh; */
+  }
+
+  .reader-content-description {
+    color: #404040a9;
+  }
+
+  .reader-content-ti {
+    font-size: 1.9rem;
+  }
+}
+
+/* Mobile Card */
+@media (max-width: 800px) {
+  .reader-header {
+    width: 100%;
+    height: 40vh;
+    background-color: #2f2424;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-size: 1.9rem;
+  }
+  .reader-header-title div:first-child,
+  .reader-header-title div:last-child {
+    font-size: 0.9024rem;
+  }
+
+  .reader-nav {
+    /* background-color: rgb(192, 72, 72); */
+    width: 100%;
+    height: 100vh;
+    /* margin-top: -30%; */
+  }
+
+  .reader-content {
+    margin-top: 15%;
+    width: 90%;
+  }
+  .reader-header-title {
+    margin-bottom: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1.8rem;
+  }
+
+  .reader-header-title div:first-child {
+    margin-bottom: 1%;
+  }
+
+  .reader-header-title div:last-child {
+    margin-top: 1%;
+  }
+
+  .reader-content-ti {
+    font-size: 1.95rem;
+  }
+}
