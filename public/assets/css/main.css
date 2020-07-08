@@ -25,6 +25,11 @@ body {
   margin: 0;
 }
 
+footer {
+  background-color: black;
+  height: 50px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
