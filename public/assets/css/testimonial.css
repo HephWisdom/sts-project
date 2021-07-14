@@ -1,0 +1,127 @@
+.testimonial-container {
+  width: 100%;
+  height: 400px;
+  /* background-color: #320370da;#32404f 052555*/
+  /* background-color: #32404f; */
+  position: relative;
+}
+
+.testimonial-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  /* filter: blur(0.2rem); */
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+
+  box-shadow: 0px 0px 0px 0px black;
+}
+/* PC Card */
+@media (min-width: 900px) {
+  .testimonial {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.644);
+    position: absolute;
+    z-index: 2;
+  }
+
+  .testimonial-text {
+    width: 50%;
+    height: 100%;
+    flex-shrink: 1;
+    /* background-color: red; */
+    font-size: 1.84rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  .testimonial-text {
+    margin-right: 20px;
+  }
+
+  .testimonial-text div:nth-child(2),
+  .testimonial-text div:nth-child(3) {
+    /* background-color: red; */
+    text-align: right;
+    font-size: 1.024rem;
+    width: 100%;
+  }
+  .testimonial-image {
+    width: 150px;
+    height: 100%;
+    /* background-color: aqua; */
+    flex-shrink: 1;
+  }
+
+  .testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* Movile Layout */
+@media (max-width: 900px) {
+  .testimonial-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(0.5rem); */
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.774);
+  }
+
+  .testimonial-container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #320370da; #32404f*/
+    /* background-color: #32404f; */
+  }
+
+  .testimonial-text {
+    width: 92%;
+    height: 40%;
+
+    /* background-color: red; */
+    font-size: 1.24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+  .testimonial-text div:nth-child(2),
+  .testimonial-text div:nth-child(3) {
+    /* background-color: red; */
+    text-align: right;
+    font-size: 0.954rem;
+    width: 100%;
+    margin-right: 15%;
+  }
+}

@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Signika&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Reem+Kufi|Righteous&display=swap");
+
+.new-program-container {
+  margin: 0px;
+  padding: 0px;
+  --card-height: 100%;
+  --card-width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.font-kufi {
+  font-family: "Reem Kufi", sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.font-sig {
+  font-family: "Signika", sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.font-fja {
+  font-family: "Fjalla One", sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.program {
+  background-color: #6714b5 !important;
+  margin: 10px;
+  box-shadow: 0 0 15px rgba(126, 125, 125, 0.15),
+    0 0 4px rgba(105, 105, 105, 0.24);
+}
+
+.program a {
+  text-decoration: none;
+  color: black;
+}
+
+.program-image-container {
+  width: 100%;
+  height: 40%;
+  background-color: black;
+}
+
+.program-image {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 0;
+}
+
+.program-image-button {
+  
+  z-index: 2;
+  height: 40px;
+  width: 45px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-image-button .arrow-btn {
+  object-fit: contain;
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+
+.program-image img {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  object-fit: cover;
+}
+.program-text-container {
+  width: 100%;
+  height: 60%;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-text-title {
+  margin-left: 5%;
+  margin-top: 7%;
+  text-decoration-line: underline;
+  text-decoration-color: #00ece9;
+}
+.program-text-description {
+  margin-left: 2.5%;
+  margin-top: 2%;
+  margin-right: 3%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .program {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .text-lg {
+    font-size: 1.95rem;
+  }
+  .text-sm {
+    font-size: 1.05rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .program {
+    width: 40%;
+    height: 60vh;
+  }
+
+  .text-lg {
+    font-size: 1.2rem;
+  }
+
+  .text-sm {
+    font-size: 0.7rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .program {
+    width: 30%;
+    height: 60vh;
+  }
+
+  .text-lg {
+    font-size: 1.1rem;
+  }
+
+  .text-sm {
+    font-size: 0.7rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .program {
+    width: 25%;
+    height: 60vh;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
+  .text-sm {
+    font-size: 0.7rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .program {
+    width: 25%;
+    height: 60vh;
+  }
+
+  .text-lg {
+    font-size: 1.8rem;
+  }
+
+  .text-sm {
+    font-size: 0.96rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 2560) {
+  .program {
+    width: 25%;
+    height: 60vh;
+  }
+
+  .text-lg {
+    font-size: 2.8rem;
+  }
+
+  .text-sm {
+    font-size: 0.96rem;
+  }
+}

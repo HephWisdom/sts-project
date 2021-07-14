@@ -1,0 +1,243 @@
+/* Mobile Card */
+
+.program-button {
+  width: 40%;
+  height: 12%;
+  background: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.program-button:first-child:hover {
+  color: #e20338;
+  background-color: white;
+}
+
+.program-button:last-child:hover {
+  color: black;
+  background-color: white;
+}
+
+.program-button:first-child {
+  margin-bottom: 10px;
+  background-color: #e20338;
+  transition: all 0.2s ease-in;
+}
+
+.program-button:last-child {
+  margin-bottom: 10px;
+  /* background-color: white; */
+  border: 2px solid white;
+  transition: all 0.2s ease-in;
+}
+
+@media (max-width: 500px) {
+  .program-tile {
+    width: 90%;
+    height: 400px;
+    padding: 0px;
+    cursor: pointer;
+    background: linear-gradient(0deg, #537895 0%, #09203f 100%);
+  }
+
+  .program-tile-image-container:hover .image-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 45, 109, 0.561);
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+
+    cursor: pointer;
+  }
+
+  .program-tile-image-container {
+    height: 70%;
+    background-color: #e20338;
+  }
+  .program-tile-image-container,
+  .image-overlay {
+    width: 100%;
+
+    position: relative;
+  }
+  .image-overlay {
+    height: 100%;
+    display: none;
+  }
+
+  .program-tile .program-tile-image-container .program-tile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .program-tile-image {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .program-tile-text {
+    height: 30%;
+    width: 100%;
+    background-color: rgba(0, 45, 109, 0.561);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .program-tile-text-date {
+    width: 100%;
+    height: 40%;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .program-tile-text-date div:first-child {
+    font-size: 1.72rem;
+    margin-right: 10px;
+  }
+
+  .program-tile-text-date div:last-child {
+    font-size: 0.98rem;
+  }
+
+  .program-tile-text-title {
+    width: 100%;
+    height: 60%;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 5px;
+    text-align: center;
+  }
+  .program-tile-text-title div:first-child {
+    font-size: 1.12rem;
+    color: #e20338;
+    font-weight: bold;
+  }
+
+  .program-tile-text-title div:last-child {
+    font-size: 0.922rem;
+    color: #58595b;
+    font-weight: bold;
+  }
+}
+
+/* PC Card */
+@media (min-width: 500px) {
+  .program-tile {
+    width: 40%;
+    height: 400px;
+    padding: 0px;
+
+    background: linear-gradient(0deg, #537895 0%, #09203f 100%);
+  }
+
+  .program-tile-image-container:hover .image-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 45, 109, 0.561);
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+
+    cursor: pointer;
+  }
+
+  .program-tile-image-container {
+    height: 80%;
+  }
+  .program-tile-image-container,
+  .image-overlay {
+    width: 100%;
+
+    position: relative;
+  }
+  .image-overlay {
+    height: 100%;
+    display: none;
+  }
+
+  .program-tile-image {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .program-tile .program-tile-image-container .program-tile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .program-tile-text {
+    height: 20%;
+    width: 100%;
+    background-color: rgba(6, 60, 136, 0.918);
+    display: flex;
+  }
+
+  .program-tile-text-date {
+    width: 30%;
+    height: 100%;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .program-tile-text-date div:first-child {
+    font-size: 1.72rem;
+  }
+
+  .program-tile-text-date div:last-child {
+    font-size: 0.92rem;
+  }
+
+  .program-tile-text-title {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 5px;
+    line-height: 1.1em;
+  }
+  .program-tile-text-title div:first-child {
+    font-size: 1.12rem;
+    color: #e20338;
+    font-weight: bold;
+  }
+
+  .program-tile-text-title div:last-child {
+    font-size: 0.922rem;
+    color: #58595b;
+    font-weight: bold;
+  }
+}
